@@ -1,0 +1,194 @@
+body{
+	font-family:'Dancing Script';
+	background-color: black;
+	color: white;
+}
+#contenido{
+	margin:0 auto;
+	width: 900px;
+}
+
+header{
+	margin-top:10px;
+	background-color:#5b7989; 
+	border-radius:10px 10px 0 0;
+	-webkit-border-radius:10px 10px 0 0; /*Para el navegador safari de apple*/
+	-moz-border-radius:10px 10px 0 0; /*Para el navegador de motzilla*/
+	animation: slidein 1s;
+}
+
+
+
+@-webkit-keyframes slidein{ /*animacion de pagina que viene de abajo*/
+							/*hacia arriba*/
+	0%{
+		margin-top: 150%;
+	}
+
+	60%{
+		margin-top: -5%;
+	}
+
+	100%{
+		margin-top: 0%;
+	}
+}
+
+header h1{
+	color:white;
+	text-shadow: 0px 2px 0px #02010a;/*Agregar sombriado a el titulo*/
+}
+
+header #menu {
+	text-align:right; /*Para que los enlaces se posicionen en la derecha*/
+	padding: 1px;
+}
+
+header #menu a{
+	margin: 5px;	
+	color: white;
+	font-size:20px;
+	text-shadow:3px 2px black;
+}
+
+.subrayado{
+	text-decoration-line:none  /*Propiedad para quitar el subrayado*/
+}
+
+section{
+	background-color: #d5c75f;
+	padding-bottom: 5%;
+	width: 100%;
+	float: left;
+}
+.contenedor{
+	padding-left: 10%;
+}
+
+.imagenes_fila1{
+	box-shadow: 2px 2px #02010a;
+	border-radius: 4%;
+	padding:10px; 
+	float: left;
+	margin: 10px;	
+	margin-top:5%; 
+	width: 25%;
+	border: 6px solid black;
+}
+
+#imagen1{
+	-webkit-filter:blur(10px); /*Filtro de desenfoque*/
+	filter: blur(10px);
+}
+
+.E_grises{
+	-webkit-filter:grayscale(100%); /*Filtro de escala de grises*/
+	filter: grayscale(100%);
+}
+
+#sepia{
+	-webkit-filter:sepia(90%);
+	filter: sepia(90%);
+
+}
+
+img{
+	box-shadow: 1px 2px #02010a;
+}
+
+footer{
+	color: black; 
+	width:100%;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #C6d5c5;
+	float: left;
+}
+
+.contenedor3{
+	padding-left: 15%;
+}
+
+.footer{
+	width: 20%;
+	float: left; /*Para que se ubique las cajas de izquierda a derecha*/
+	margin-left:15px;
+	text-align: center;
+	font-size:15px; 
+	margin: 5px;
+}
+
+#icono1 , #icono2,#icono3{
+	width: 15%;
+	margin: 5px;
+}
+
+#copy{
+	text-align: center;
+	float: left;
+	margin-right: 0px;
+	margin-left: 15%;
+	width: 4%;
+}
+
+@media screen and (max-width: 900px){
+	
+	body{
+		font-size: 95%;
+		text-align: center;
+	}
+
+	div #menu{
+		margin: 0 auto;
+		text-align: center;
+		margin: 3px;
+		padding-bottom: 3%;
+		margin-left:20px; 
+	}
+	
+	#contenido{
+		width: 98%;
+	}
+
+	.contenedor{
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.imagenes_fila1{
+		margin: 0 auto;
+		width: 72%;
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+
+	footer{
+		margin-top: 2%;
+	}
+
+	.contenedor3{
+		margin: 0 auto;
+		margin-top: 2%;
+		width: 100%;
+
+	}
+
+	.footer{
+		border-radius: 8px;
+		font-size: 90%;
+		border: 4px solid grey;
+		padding: 6%;
+		margin: 0 auto;
+		margin: 3%;
+		margin-left:1%; 
+		width: 60%;
+	}
+
+	#icono1, #icono2,#icono3{
+		width: 15%;
+	}
+
+
+}
+
+
+

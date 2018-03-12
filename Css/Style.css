@@ -1,0 +1,293 @@
+body{
+	font-family:'Dancing Script';
+	background-color: black;
+	color:black;
+}
+#contenido{
+	margin:0 auto;
+	width: 900px;
+}
+
+header{
+	margin-top:10px;
+	background-color:#5b7989; 
+	border-radius:10px 10px 0 0;
+	-webkit-border-radius:10px 10px 0 0; /*Para el navegador safari de apple*/
+	-moz-border-radius:10px 10px 0 0; /*Para el navegador de motzilla*/
+	animation: slidein 1s;
+}
+
+@-webkit-keyframes slidein{ /*animacion de pagina que viene de abajo*/
+							/*hacia arriba*/
+	0%{
+		margin-top: 150%;
+	}
+
+	60%{
+		margin-top: -5%;
+	}
+
+	100%{
+		margin-top: 0%;
+	}
+
+}
+
+header h1{
+	color:white;
+	text-shadow: 0px 2px 0px #02010a;/*Agregar sombriado a el titulo*/
+}
+
+header #menu {
+	text-align:right; /*Para que los enlaces se posicionen en la derecha*/
+	padding: 1px;
+}
+
+header #menu a{
+	margin: 5px;	
+	color: white;
+	font-size:20px;
+	text-shadow:3px 2px black;
+}
+
+.subrayado{
+	text-decoration-line:none  /*Propiedad para quitar el subrayado*/
+}
+
+section .contenedor{
+	background-color:#82c3a6;
+}
+
+.contenedor #imagen1{
+	margin: 10px;
+	margin-left: 15%;
+	width:70%;
+	box-shadow: 2px 2px #02010a;
+}
+
+img{
+	box-shadow: 1px 2px #02010a;
+}
+
+article{
+	width: 100%;
+	float: left;
+	background-color:#d5c75f;
+}
+.contenedor2{
+	padding-left:8%;
+	padding-bottom:25%;
+	padding-top: 5%;
+	border: 1px solid black;
+	height: auto;
+}
+
+.imagen{
+	box-shadow: 2px 2px #02010a;
+	display: flex;
+	box-shadow: 6px 2px grey;
+	border-radius: 4%;
+	float: left;
+	margin-left: 8%;	
+	width: 35%;
+	border: 6px solid black;
+}
+
+#evento_img_2:hover{
+	animation:animacion_imagen2 2s; 
+}
+
+@-webkit-keyframes animacion_imagen2{
+	80%{
+		border: 2px solid black;
+		box-shadow: 2px 1px #82c3a6;
+	 	transform:rotate(10deg);
+	}
+
+	100%{
+		position:relative;
+	}
+}
+
+
+#tamaño_imagen3{	
+	width:30%;
+}
+
+.evento_img_3:hover{ /*Evento hover, cuadno el cursor pase por el elemento*/
+	animation: animacion_imagen3 2s;/*en el evento se vera la animacion*/
+	border: 2px solid black;
+}
+
+
+@-webkit-keyframes animacion_imagen3{ /*animacion en el evento hover*/
+	80%{
+		transform: translate(20px,-5px);
+		position: relative;
+		box-shadow: 2px 1px #82c3a6;
+	}
+
+	100%{
+		position: relative; /*Vuelva a su posicion original antes de la*/
+							/*animacion*/
+	}
+
+	
+}
+
+#contenedor_titulo{
+	margin:10%; 
+	margin-left:25%;
+	width:10%;
+	float: left;
+	
+}
+
+.titulo_imagen{
+	margin-top: 5%;
+	padding-left: 28%;
+	text-align: center;
+	float: left;	
+	font-size: 2em;
+
+}
+
+footer{
+	
+	padding: 0px;
+	padding-bottom:5px; 
+	border:0px; 
+	width:100%;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #C6d5c5;
+	float: left;
+}
+
+.contenedor3{
+	margin-left: 10%;
+	margin-top: 5%;
+}
+
+.footer{
+	width: 20%;
+	float: left; /*Para que se ubique las cajas de izquierda a derecha*/
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size:15px; 
+}
+
+#icono1 , #icono2,#icono3{
+	width: 15%;
+	margin: 5px;
+}
+
+#copy{
+	text-align: center;
+	float: left;
+	margin-right: 0px;
+	margin-left: 15%;
+	width: 4%;
+}
+
+
+@media screen and (max-width: 900px){/*Pantallas de 900px o menos*/
+	body{
+		font-size: 95%;
+		text-align: center;
+	}
+
+	div #menu{
+		margin: 0 auto;
+		text-align: center;
+		margin: 3px;
+		padding-bottom: 3%;
+		margin-left:20px; 
+	}
+
+	#contenido{
+		width: 100%;
+		margin: 0 auto;
+	}	
+
+	header{
+		width: 100%
+		margin:0 auto;
+	}
+
+	.contenedor{
+		width: 100%;
+		margin-top: 6px;
+		margin-bottom: 4px;
+	}
+
+	.contenedor #imagen1{
+
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 5%;
+	}
+
+	.contenedor2{
+		width: 100%;
+		margin: 0 auto;
+		border: 0;
+	}
+
+	.imagen{
+		margin: 2%;
+		margin-bottom: 40px;
+		width:80%;		
+	}
+
+	#tamaño_imagen3{
+		width: 80%;
+		margin: 2%;
+		margin-bottom: 40px;
+	}
+	footer{
+		margin-top: 2%;
+	}
+
+	.contenedor3{
+		margin: 0 auto;
+		margin-top: 2%;
+		width: 100%;
+
+	}
+
+	.footer{
+		border-radius: 8px;
+		font-size: 90%;
+		border: 4px solid grey;
+		padding: 2%;
+		width: 80%;
+	}
+
+	#icono1, #icono2,#icono3{
+		width: 10%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
